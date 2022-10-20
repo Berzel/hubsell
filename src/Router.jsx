@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import ErrorPage from "./Pages/ErrorPage"
 import Home from "./Pages/Home"
 import PageOne from "./Pages/PageOne"
 import PageTwo from "./Pages/PageTwo"
@@ -9,14 +8,13 @@ export default function Router() {
         {
             path: '/',
             element: <Home />,
-            errorElement: <ErrorPage />
         },
         {
-            path: '/pages/1',
+            path: '/page-one',
             element: <PageOne />
         },
         {
-            path: '/pages/2',
+            path: '/page-two',
             element: <PageTwo />
         }
     ])
