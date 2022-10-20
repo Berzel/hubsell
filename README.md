@@ -1,9 +1,9 @@
-## Hubsell: Coding Assignment
+# Hubsell: Coding Assignment
 
-# Live Preview
+## Live Preview
 You can view a live version of this app [here](https://berzel-hubspot.vercel.app)
 
-# How to run locally
+## How to run locally
 
 1. Clone this repository to your computer
 2. `cd` into the project folder
