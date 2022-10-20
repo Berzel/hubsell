@@ -1,7 +1,7 @@
 # Hubsell: Coding Assignment
 
 ## Live Preview
-You can view a live version of this app [here](https://hubsell.vercel.app/)
+You can view a demo version of this app [here](https://hubsell.vercel.app/)
 
 ## How to run locally
 
