@@ -2,6 +2,17 @@ import { NavLink } from "react-router-dom";
 
 export default function App({children}) {
 
+    const pages = [
+        {
+            to: '/page-one',
+            label: 'Page One'
+        },
+        {
+            to: '/page-two',
+            label: 'Page Two'
+        }
+    ]
+
     return (
         <div className="container mx-auto">
             <div className="flex items-center space-x-16 py-4 border-b">
@@ -11,12 +22,13 @@ export default function App({children}) {
                 </NavLink>
                 
                 <nav className="flex space-x-4">
-                    <NavLink to={'/page-one'} className={({isActive}) => `text-sky-500 hover:underline ${isActive ? 'font-semibold':''}`}>
-                        Page 1
-                    </NavLink>
-                    <NavLink to={'/page-two'} className={({isActive}) => `text-sky-500 hover:underline ${isActive ? 'font-semibold':''}`}>
-                        Page 2
-                    </NavLink>
+                    {
+                        pages.map(page => (
+                            <NavLink to={page.to} className={({isActive}) => `text-sky-500 hover:underline ${isActive ? 'font-semibold':''}`}>
+                                { page.label }
+                            </NavLink>
+                        ))
+                    }
                 </nav>
             </div>
 
